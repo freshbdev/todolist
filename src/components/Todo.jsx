@@ -1,4 +1,4 @@
-import { ListItem, ListItemAvatar, ListItemText } from '@mui/material';
+import { ListItem, ListItemText } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import {db} from '../firebase.js';
 import { doc, deleteDoc } from "firebase/firestore";
@@ -8,8 +8,7 @@ const Todo = ({arr}) => {
 
     return (
         <ListItem>
-            <ListItemAvatar />
-            <ListItemText primary={arr.item.todo} secondary="Click the Trash icon to remove the Todo" />
+            <ListItemText primary={arr.item.todo} secondary="Click the Trash icon to remove the text" />
             <DeleteIcon fontSize="large" style={{opacity:0.7, cursor: 'pointer'}} onClick={() => {deleteDoc(doc(db,'todos',arr.id))}} />
         </ListItem>
     )
