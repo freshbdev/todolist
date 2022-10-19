@@ -1,0 +1,15 @@
+.todo__list li{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95vw;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 10px !important;
+    border-radius: .5rem;
+  }
+.todo__list{
+  margin: 1em auto 0;
+  padding: 0;
+}
