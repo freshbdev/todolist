@@ -36,7 +36,7 @@ function App() {
     onChange={e=>setInput(e.target.value)} />
         <Button variant="contained" color="primary" onClick={addTodo}>Add Todo</Button>
       </form>
-      <ul className="todo__list">
+      <ul className="todo__list aa">
       {todos.map(item=> <Todo key={item.id} arr={item} />)}
       </ul>
     </div>
